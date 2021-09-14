@@ -2,7 +2,7 @@ import { Flex, Box, Image, Text } from '@chakra-ui/react'
 
 export function TravelTypes() {
     return(
-        <Flex marginY="20" width="100%" maxWidth={1480} marginX="auto" justify="space-between" alignItems="center">
+        <Flex marginY="20" width="100%" maxWidth={1480} marginX="auto" justify="space-evenly" alignItems="center">
             <Box>
                 <Image src='/icons/cocktail.png' alt='cocktail icon' width={100} />
                 <Text fontWeight="bold" fontSize="2xl">vida noturna</Text>

@@ -33,7 +33,7 @@ export function Banner() {
 				</Box>
 				
 				<Box >
-					<Image src='/Airplane.png' marginTop={50} />
+					<Image src='/Airplane.png' marginTop={50}  alt="Airplane image"/>
 				</Box>
 			</Flex>
 				
