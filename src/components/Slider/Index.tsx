@@ -42,7 +42,7 @@ export function PhotoSlider() {
                 </SwiperSlide>
                 
                 <SwiperSlide>
-                    <SliderItem continent="Ãfrica" src="/cities/Africa.jpg" />
+                    <SliderItem continent="África" src="/cities/Africa.jpg" />
                 </SwiperSlide>
             </Swiper>
         </Flex>

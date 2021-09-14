@@ -1,5 +1,5 @@
 import { Box, Text, Image, Link }from '@chakra-ui/react'
-import { SwiperSlide } from 'swiper/react'
+
 
 interface SliderItemProps {
     continent: string;
