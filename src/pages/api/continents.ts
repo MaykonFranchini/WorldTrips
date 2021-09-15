@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next"
 
 export default function Continents(resquest: NextApiRequest, response: NextApiResponse) {
-    const data = {
-        europa: { 
+    const data = [
+        {   slug: 'europa',
             name: 'Europa', 
             bio: 'A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste',
             info: {countries:50, languages: 60, topCities:27},
@@ -14,7 +14,8 @@ export default function Continents(resquest: NextApiRequest, response: NextApiRe
                 { imgUrl: 'test', name: 'Amsterdã', country: 'Reino Unido', flagUrl: 'teste'}
             ]
         },
-        americaDoSul: { 
+        {   
+            slug: 'americadosul',
             name: 'Ámerica do Sul', 
             bio: 'A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste',
             info: {countries:50, languages: 60, topCities:27},
@@ -26,7 +27,8 @@ export default function Continents(resquest: NextApiRequest, response: NextApiRe
                 { imgUrl: 'test', name: 'Amsterdã', country: 'Reino Unido', flagUrl: 'teste'}
             ]
         },
-        americaDoNorte: { 
+        {   
+            slug: 'americadonorte',
             name: 'Ámerica do Norte', 
             bio: 'A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste',
             info: {countries:50, languages: 60, topCities:27},
@@ -38,7 +40,8 @@ export default function Continents(resquest: NextApiRequest, response: NextApiRe
                 { imgUrl: 'test', name: 'Amsterdã', country: 'Reino Unido', flagUrl: 'teste'}
             ]
         },
-        asia: { 
+        {   
+            slug: 'asia',
             name: 'Ásia', 
             bio: 'A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste',
             info: {countries:50, languages: 60, topCities:27},
@@ -50,7 +53,8 @@ export default function Continents(resquest: NextApiRequest, response: NextApiRe
                 { imgUrl: 'test', name: 'Amsterdã', country: 'Reino Unido', flagUrl: 'teste'}
             ]
         },
-        africa: { 
+        { 
+            slug: 'africa',
             name: 'África', 
             bio: 'A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste',
             info: {countries:50, languages: 60, topCities:27},
@@ -62,7 +66,8 @@ export default function Continents(resquest: NextApiRequest, response: NextApiRe
                 { imgUrl: 'test', name: 'Amsterdã', country: 'Reino Unido', flagUrl: 'teste'}
             ]
         },
-        oceania: { 
+        {   
+            slug: 'oceania',
             name: 'Oceania', 
             bio: 'A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste',
             info: {countries:50, languages: 60, topCities:27},
@@ -74,7 +79,7 @@ export default function Continents(resquest: NextApiRequest, response: NextApiRe
                 { imgUrl: 'test', name: 'Amsterdã', country: 'Reino Unido', flagUrl: 'teste'}
             ]
         }
-    }
+    ]
 
     return response.json(data)
 
