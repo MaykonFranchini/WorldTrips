@@ -1,8 +1,18 @@
 import { GetStaticPaths, GetStaticProps } from "next";
+import { Header } from '../../components/Header'
+import { Flex, Heading } from '@chakra-ui/react'
 
 export default function Continent({continentData}){
     return(
-        <h1>{continentData.name}</h1>
+      <Flex direction="column">
+        <Header />
+        
+        <Flex bgImage={continentData.banner} bgPosition="center" bgRepeat="no-repeat" bgSize="cover" align="flex-end" height={450}>
+          <Heading  padding="5" color="white">{continentData.name}</Heading>
+
+        </Flex>
+
+      </Flex>
     )
 }
 
@@ -14,7 +24,7 @@ export const getStaticPaths: GetStaticPaths = async() => {
     const paths = res.map((continent) => ({
         params: { continent: continent.slug },
       }));
-      console.log(paths)
+      // console.log(paths)
 
     return { paths, fallback: false }
 }
@@ -28,7 +38,7 @@ export const getStaticProps : GetStaticProps = async ({params}) => {
     const continentData = jsonResponse.filter((continent) =>
     continent.slug === params?.continent)[0];
 
-    console.log(continentData)
+    // console.log(continentData)
     
     return {
       props: { continentData }, // will be passed to the page component as props

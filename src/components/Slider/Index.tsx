@@ -22,27 +22,27 @@ export function PhotoSlider() {
             >
                 
                 <SwiperSlide>
-                    <SliderItem continent="Europa" src="/cities/Europe1.jpg" />
+                    <SliderItem continent="Europa" src="/cities/europa.jpg" />
                </SwiperSlide> 
 
                 <SwiperSlide>
-                    <SliderItem continent="América do Sul" src="/cities/America.jpg" />
+                    <SliderItem continent="América do Sul" src="/cities/americadosul.jpg" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <SliderItem continent="América do Norte" src="/cities/AmericaNorte.jpg" />
+                    <SliderItem continent="América do Norte" src="/cities/americadonorte.jpg" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <SliderItem continent="Ásia" src="/cities/Asia.jpg" />
+                    <SliderItem continent="Ásia" src="/cities/asia.jpg" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <SliderItem continent="Oceania" src="/cities/Oceania.jpg" />
+                    <SliderItem continent="Oceania" src="/cities/oceania.jpg" />
                 </SwiperSlide>
                 
                 <SwiperSlide>
-                    <SliderItem continent="África" src="/cities/Africa.jpg" />
+                    <SliderItem continent="África" src="/cities/africa.jpg" />
                 </SwiperSlide>
             </Swiper>
         </Flex>
