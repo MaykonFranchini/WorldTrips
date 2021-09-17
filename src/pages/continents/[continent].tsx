@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import { Header } from '../../components/Header'
-import { Flex, Heading } from '@chakra-ui/react'
+import { Flex, Heading, Box, Text } from '@chakra-ui/react'
 
 export default function Continent({continentData}){
     return(
@@ -9,7 +9,25 @@ export default function Continent({continentData}){
         
         <Flex bgImage={continentData.banner} bgPosition="center" bgRepeat="no-repeat" bgSize="cover" align="flex-end" height={450}>
           <Heading  padding="5" color="white">{continentData.name}</Heading>
-
+        </Flex>
+        <Flex marginX="auto" marginY={50} justifyContent="center" alignItems="center">
+          <Box maxWidth="30%" marginRight={50}>
+            <Text fontWeight="bold" fontSize="lg">{continentData.bio}</Text>
+          </Box>
+          <Flex alignItems="center">
+            <Box mr="4">
+              <Text color="#f5b91c" fontSize="4xl" fontWeight="bold">{continentData.info.countries}</Text>
+              <Text fontWeight="bold">paises</Text>
+            </Box>
+            <Box mr="4">
+              <Text color="#f5b91c" fontSize="4xl" fontWeight="bold">{continentData.info.languages}</Text>
+              <Text fontWeight="bold">linguas</Text>
+            </Box>
+            <Box mr="4">
+              <Text color="#f5b91c" fontSize="4xl" fontWeight="bold">{continentData.info.topCities}</Text>
+              <Text fontWeight="bold">cidades</Text>
+            </Box>
+          </Flex>
         </Flex>
 
       </Flex>
