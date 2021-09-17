@@ -2,7 +2,7 @@ import { Header } from "../components/Header";
 import { Flex, Text } from '@chakra-ui/react'
 import { Banner } from '../components/Banner'
 import { TravelTypes } from "../components/TravelTypes";
-import { PhotoSlider } from "../components/Slider/Index";
+import { PhotoSlider } from "../components/PhotoSlider/Index";
 
 
 export default function Home() {
