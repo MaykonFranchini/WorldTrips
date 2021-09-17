@@ -8,11 +8,11 @@ export default function Continents(resquest: NextApiRequest, response: NextApiRe
             bio: 'A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste',
             info: {countries:50, languages: 60, topCities:27},
             famousCities: [
-                { imgUrl: 'europa', name: 'Londres', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Paris', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Roma', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Praga', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Amsterdã', country: 'Reino Unido', flagUrl: 'teste'}
+                { imgUrl: "/cities/london.jpg", name: 'Londres', country: 'Reino Unido', flagUrl: '/countriesFlags/united-kingdom.png'},
+                { imgUrl: "/cities/paris.jpg", name: 'Paris', country: 'França', flagUrl: '/countriesFlags/france.png'},
+                { imgUrl: "/cities/roma.jpg", name: 'Roma', country: 'Itália', flagUrl: '/countriesFlags/italy.png'},
+                { imgUrl: "/cities/praga.jpg", name: 'Praga', country: 'Republica Tcheca', flagUrl: '/countriesFlags/czech-republic.png'},
+                { imgUrl: "/cities/amsterdam.jpg", name: 'Amsterdã', country: 'Holanda', flagUrl: '/countriesFlags/netherlands.png'}
             ]
         },
         {   

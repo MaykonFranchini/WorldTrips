@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import { Header } from '../../components/Header'
-import { Flex, Heading, Box, Text } from '@chakra-ui/react'
+import { Flex, Heading, Box, Text, SimpleGrid, Image, Avatar } from '@chakra-ui/react'
 
 export default function Continent({continentData}){
     return(
@@ -29,7 +29,29 @@ export default function Continent({continentData}){
             </Box>
           </Flex>
         </Flex>
+        <Flex direction="column" margin={50}>
+          <Heading>Cidades +100</Heading>
 
+          <SimpleGrid minChildWidth="280px" spacing="50px" mt={50}>
+
+            {continentData.famousCities.map(city => {
+
+              return (
+              <Box key={city.name}  border="2px solid #f5b91c" >
+                <Image src={city.imgUrl} alt={city.name}/>
+                <Flex justifyContent="space-between" margin="3">
+                  <Box>
+                    <Text fontWeight="bold">{city.name}</Text>
+                    <Text>{city.country}</Text>
+                  </Box>
+                  <Avatar  size="sm" src={city.flagUrl} />
+                </Flex>
+              </Box>)
+            })}
+            
+
+          </SimpleGrid>
+        </Flex>
       </Flex>
     )
 }
