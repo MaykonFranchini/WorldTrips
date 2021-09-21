@@ -34,13 +34,13 @@ export default function Continents(resquest: NextApiRequest, response: NextApiRe
             name: 'Ámerica do Norte', 
             banner: "url('/cities/americadonorte.jpg')",
             bio: 'A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste',
-            info: {countries:50, languages: 60, topCities:27},
+            info: {countries:2, languages: 2, topCities:12},
             famousCities: [
-                { imgUrl: 'test', name: 'Londres', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Paris', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Roma', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Praga', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Amsterdã', country: 'Reino Unido', flagUrl: 'teste'}
+                { imgUrl: "/cities/new-york.jpg", name: 'Nova York', country: 'Estados Unidos', flagUrl: '/countriesFlags/united-states.png'},
+                { imgUrl: "/cities/montreal.jpg", name: 'Montreal', country: 'Canadá', flagUrl: '/countriesFlags/canada.png'},
+                { imgUrl: "/cities/miami.jpg", name: 'Miami', country: 'Estados Unidos', flagUrl: '/countriesFlags/united-states.png'},
+                { imgUrl: "/cities/toronto.jpg", name: 'Toronto', country: 'Canadá', flagUrl: '/countriesFlags/canada.png'},
+                { imgUrl: "/cities/san-francisco.jpg", name: 'São Francisco', country: 'Estados Unidos', flagUrl: '/countriesFlags/united-states.png'}
             ]
         },
         {   

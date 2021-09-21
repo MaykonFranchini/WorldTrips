@@ -52,7 +52,7 @@ export default function Continent({ continentData } :ContinentPageProps){
               </Box>
               <Box mr="4">
                 <Text color="#f5b91c" fontSize="4xl" fontWeight="bold">{continentData.info.topCities}</Text>
-                <Text fontWeight="bold">cidades</Text>
+                <Text fontWeight="bold">cidades +100</Text>
               </Box>
             </Flex>
           </Flex>
