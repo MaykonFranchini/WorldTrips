@@ -3,23 +3,28 @@ import { Flex, Text } from '@chakra-ui/react'
 import { Banner } from '../components/Banner'
 import { TravelTypes } from "../components/TravelTypes";
 import { PhotoSlider } from "../components/PhotoSlider/Index";
-
+import Head from 'next/head'
 
 export default function Home() {
 
   return (
-    <Flex direction='column'>
+    <>
+      <Head>
+        <title>Worldtrip</title>
+      </Head>
+      <Flex direction='column'>
 
-    
-      <Header />
-      <Banner />
-      <TravelTypes />
-      <Flex justify="center" alignItems="center" direction="column">
-        <Text fontSize="4xl">Vamos nessa?</Text>
-        <Text fontSize="4xl">Escolha seu continente</Text>
-      </Flex>
+      
+        <Header />
+        <Banner />
+        <TravelTypes />
+        <Flex justify="center" alignItems="center" direction="column">
+          <Text fontSize="4xl">Vamos nessa?</Text>
+          <Text fontSize="4xl">Escolha seu continente</Text>
+        </Flex>
 
-      <PhotoSlider />
-   </Flex>
+        <PhotoSlider />
+    </Flex>
+  </>
   )
 }

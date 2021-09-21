@@ -5,7 +5,6 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <title>Worldtrip</title>
                     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"  />
                 </Head>
                 <body>
