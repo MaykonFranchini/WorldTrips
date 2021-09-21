@@ -19,14 +19,14 @@ export default function Continents(resquest: NextApiRequest, response: NextApiRe
             slug: 'americadosul',
             name: 'Ámerica do Sul',
             banner: "url('/cities/americadosul.jpg')", 
-            bio: 'A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste',
-            info: {countries:50, languages: 60, topCities:27},
+            bio: 'A América do Sul é um continente inteiramente no hemisfério ocidental e principalmente no hemisfério sul, com uma porção relativamente pequena no hemisfério norte. A América do Sul é composta por doze países, tem uma área de 17.840.000 quilômetros quadrados. A geografia do oeste da América do Sul é dominada pelas montanhas dos Andes; em contraste, a parte oriental contém regiões montanhosas e vastas planícies onde rios como o Amazonas, Orinoco e Paraná fluem.',
+            info: {countries:12, languages: 2, topCities:4},
             famousCities: [
-                { imgUrl: 'test', name: 'Londres', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Paris', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Roma', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Praga', country: 'Reino Unido', flagUrl: 'teste'},
-                { imgUrl: 'test', name: 'Amsterdã', country: 'Reino Unido', flagUrl: 'teste'}
+                { imgUrl: "/cities/rio-de-janeiro.jpg", name: 'Rio de Janeiro', country: 'Brasil', flagUrl: '/countriesFlags/brazil.png'},
+                { imgUrl: "/cities/sao-paulo.jpg", name: 'São Paulo', country: 'Brasil', flagUrl: '/countriesFlags/brazil.png'},
+                { imgUrl: "/cities/buenos-aires.jpg", name: 'Buenos Aires', country: 'Argentina', flagUrl: '/countriesFlags/argentina.png'},
+                { imgUrl: "/cities/santiago.jpg", name: 'Santiago', country: 'Chile', flagUrl: '/countriesFlags/chile.png'},
+                { imgUrl: "/cities/machu-picchu.jpg", name: 'Machu Picchu', country: 'Peru', flagUrl: '/countriesFlags/peru.png'}
             ]
         },
         {   

@@ -38,7 +38,7 @@ export default function Continent({continentData}){
 
               return (
               <Box key={city.name}  border="2px solid #f5b91c" >
-                <Image src={city.imgUrl} alt={city.name}/>
+                <Image src={city.imgUrl} alt={city.name} height={200}/>
                 <Flex justifyContent="space-between" margin="3">
                   <Box>
                     <Text fontWeight="bold">{city.name}</Text>
