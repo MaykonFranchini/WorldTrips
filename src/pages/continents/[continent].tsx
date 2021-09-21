@@ -2,7 +2,29 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { Header } from '../../components/Header'
 import { Flex, Heading, Box, Text, SimpleGrid, Image, Avatar } from '@chakra-ui/react'
 
-export default function Continent({continentData}){
+interface ContinentProps {
+  slug: string,
+  name: string,
+  banner: string, 
+  bio:string,
+  info: {
+    countries:number,
+    languages: number,
+    topCities: number,
+  },
+  famousCities: [{
+    imgUrl: string, 
+    name: string, 
+    country: string, 
+    flagUrl: string,
+  }],
+}
+
+interface ContinentPageProps {
+  continentData: ContinentProps,
+}
+
+export default function Continent({ continentData } :ContinentPageProps){
     return(
       <Flex direction="column">
         <Header />
