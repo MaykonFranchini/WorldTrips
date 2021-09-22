@@ -1,7 +1,8 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import { Header } from '../../components/Header'
-import { Flex, Heading, Box, Text, SimpleGrid, Image, Avatar } from '@chakra-ui/react'
+import { Flex, Heading, Box, Text, SimpleGrid, Image, Avatar, Tooltip, Icon } from '@chakra-ui/react'
 import Head from 'next/head'
+import { AiOutlineInfoCircle } from 'react-icons/ai'
 
 interface ContinentProps {
   slug: string,
@@ -52,7 +53,13 @@ export default function Continent({ continentData } :ContinentPageProps){
               </Box>
               <Box mr="4">
                 <Text color="#f5b91c" fontSize="4xl" fontWeight="bold">{continentData.info.topCities}</Text>
-                <Text fontWeight="bold">cidades +100</Text>
+                <Text fontWeight="bold">
+                  cidades +100
+                  <Tooltip label="Cities that are on list of top 100 most visit cites in the world." aria-label="A tooltip">
+                    <Icon><AiOutlineInfoCircle fontSize={20} /></Icon>
+                  </Tooltip>
+
+                </Text>
               </Box>
             </Flex>
           </Flex>
