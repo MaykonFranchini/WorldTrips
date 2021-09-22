@@ -15,8 +15,8 @@ export function SliderItem({continent, src}: SliderItemProps) {
                 src={src} 
                 alt="London" marginX="auto"
                 maxWidth="100%"
-                width={1248}
-                height={450}     
+                width={[375, 1248]}
+                height={[250, 450]}     
             />
             <Box position="absolute" textAlign="center" top="50%" left="50%" transform="translate(-50%, 0)">
                 <Text color="white" fontWeight="bold" fontSize="4xl" textShadow="1px 2px 1px #000000">{continent}</Text>

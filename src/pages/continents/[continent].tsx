@@ -35,12 +35,12 @@ export default function Continent({ continentData } :ContinentPageProps){
         <Flex direction="column">
           <Header />
           
-          <Flex bgImage={continentData.banner} bgPosition="center" bgRepeat="no-repeat" bgSize="cover" align="flex-end" height={450}>
+          <Flex bgImage={continentData.banner} bgPosition="center" bgRepeat="no-repeat" bgSize="cover" align="flex-end" height={[300, 450]}>
             <Heading  padding="5" color="white">{continentData.name}</Heading>
           </Flex>
-          <Flex marginX="auto" marginY={50} justifyContent="center" alignItems="center">
-            <Box maxWidth="30%" marginRight={50}>
-              <Text fontWeight="bold" fontSize="lg">{continentData.bio}</Text>
+          <Flex marginX="auto" marginY={50} justifyContent="center" flexDir={["column", "row"]} alignItems="center">
+            <Box maxWidth={["80%", "30%"]} marginRight={50} marginBottom="5">
+              <Text fontWeight="bold" fontSize="lg" marginLeft="3">{continentData.bio}</Text>
             </Box>
             <Flex alignItems="center">
               <Box mr="4">

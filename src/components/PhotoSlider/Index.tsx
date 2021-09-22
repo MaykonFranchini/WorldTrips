@@ -11,8 +11,8 @@ export function PhotoSlider() {
     
     return (
         <Flex 
-            maxWidth={1280}
-            Height={450}
+            maxWidth={[375, 1280]}
+            Height={[250, 450]}
             marginX='auto'
             padding="4"
         >

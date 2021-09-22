@@ -7,6 +7,7 @@ import Head from 'next/head'
 
 export default function Home() {
 
+
   return (
     <>
       <Head>
@@ -19,8 +20,8 @@ export default function Home() {
         <Banner />
         <TravelTypes />
         <Flex justify="center" alignItems="center" direction="column">
-          <Text fontSize="4xl">Vamos nessa?</Text>
-          <Text fontSize="4xl">Escolha seu continente</Text>
+          <Text fontSize={["lg", "4xl"]}>Vamos nessa?</Text>
+          <Text fontSize={["lg", "4xl"]}>Escolha seu continente</Text>
         </Flex>
 
         <PhotoSlider />
