@@ -72,7 +72,7 @@ export default function Continent({ continentData } :ContinentPageProps){
 
                 return (
                 <Box key={city.name}  border="2px solid #f5b91c" >
-                  <Image src={city.imgUrl} alt={city.name} height={200}/>
+                  <Image src={city.imgUrl} alt={city.name} height={200} width="100%" />
                   <Flex justifyContent="space-between" margin="3">
                     <Box>
                       <Text fontWeight="bold">{city.name}</Text>
